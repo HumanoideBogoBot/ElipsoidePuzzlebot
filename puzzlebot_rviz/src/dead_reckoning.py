@@ -2,7 +2,7 @@
 
 #Santiago Ortiz Suzarte 		   A01750402
 #Daniel Fuentes Castro			A01750425
-#Leonardo Gracida Muñoz 		A01379812
+#Leonardo Gracida Munoz 		A01379812
 #Importamos las librerias necesarias
 import tf, rospy
 import numpy as np
@@ -15,7 +15,7 @@ import numpy as np
 from gazebo_msgs.msg import ModelStates
 from tf.transformations import euler_from_quaternion
 x, y, q = -0.955, 0.753, -1.57 #Declaramos las posiciones iniciales del localizador con la mejor estimacion
-"""Las declaramos en esos valores, ya que es la posicion en la que inicia la posición en el espacio en la que inicia el robot en gazebo"""
+"""Las declaramos en esos valores, ya que es la posicion en la que inicia la posicion en el espacio en la que inicia el robot en gazebo"""
 x_gaze,y_gaze,q_gaze = 0.0,0.0,[0,0,0,0] #Creamos las variables de localizacion del robot en gazebo
 r, l = 0.05, 0.188 #Radio y  y largo del robot
 v, w = 0.0, 0.0
@@ -79,8 +79,8 @@ def node():
 						[0, 1, T*v*np.cos(th_k_1)],
 						[0, 0, 1]])
 		#Dalcarmos el valor de la variable kr y kl
-		kr = 6
-		kl = 6
+		kr = 8
+		kl = 8
 		#Declaramos La estructura de las dos matrices que conforma la matriz de error no deterministica
 		trian_k = np.array([[kr*np.abs((v + 0.5*l*w)/r), 0],
 							[0, kl*np.abs((v - 0.5*l*w)/r)]])
