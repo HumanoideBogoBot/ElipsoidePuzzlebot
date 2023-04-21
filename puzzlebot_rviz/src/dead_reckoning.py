@@ -79,8 +79,8 @@ def node():
 						[0, 1, T*v*np.cos(th_k_1)],
 						[0, 0, 1]])
 		#Dalcarmos el valor de la variable kr y kl
-		kr = 8
-		kl = 8
+		kr = 95
+		kl = 95
 		#Declaramos La estructura de las dos matrices que conforma la matriz de error no deterministica
 		trian_k = np.array([[kr*np.abs((v + 0.5*l*w)/r), 0],
 							[0, kl*np.abs((v - 0.5*l*w)/r)]])
@@ -146,4 +146,5 @@ if __name__ == '__main__':
 		node()
     except rospy.ROSInterruptException:
     	pass
+
 
