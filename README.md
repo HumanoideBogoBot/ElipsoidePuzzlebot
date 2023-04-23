@@ -1,4 +1,5 @@
 # ElipsoidePuzzlebot
+- Aqui estan todos los paquetes necesarios para probar la elipsoide de confianza de Puzzlebot.
 Calculo de la elipsoide de confianza del Puzzlebot usando el simulador de Gazeboel siguiente comando:
 - Corremos los siguientes comandos en una terminal diferente sin olvidar compilar nuestro ws.
 - Iniciamos la simulacion en gazebo
