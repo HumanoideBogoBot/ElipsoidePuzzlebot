@@ -19,3 +19,7 @@ roslaunch puzzlebot_rviz display.launch
 rosrun teleop_twist_keyboard teleop_twist_keyboard.py
 ```
 - En RVIZ agregamos el el mensaje de /odom desde add by topic.
+- La localidad dell codigo que calcula de elipsoide de confianza es:
+```
+rosrun teleop_twist_keyboard teleop_twist_keyboard.py
+```
